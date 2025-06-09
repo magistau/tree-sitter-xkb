@@ -1,0 +1,39 @@
+{
+	"$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+	"grammars": [
+		{
+			"name": "xkb",
+			"camelcase": "Xkb",
+			"title": "XKB",
+			"scope": "source.xkb",
+			"file-types": [
+				"xkb"
+			],
+			"injection-regex": "^xkb$",
+			"class-name": "TreeSitterXkb"
+		}
+	],
+	"metadata": {
+		"version": "0.1.0",
+		"license": "BSD3",
+		"description": "X Keyboard Extension keymap text format",
+		"authors": [
+			{
+				"name": "Tau",
+				"email": "tree-sitter@alice-carroll.pet"
+			}
+		],
+		"links": {
+			"repository": "https://github.com/magistau/tree-sitter-xkb"
+		}
+	},
+	"bindings": {
+		"c": true,
+		"go": true,
+		"node": true,
+		"python": true,
+		"rust": true,
+		"swift": true,
+		"zig": true
+	}
+}

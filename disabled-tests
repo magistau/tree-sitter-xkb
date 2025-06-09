@@ -1,0 +1,7 @@
+# files with extensions are not tests
+*.*
+README
+# that is some different file format
+**/rules/*
+# no docs for geometry format
+**/geometry/*

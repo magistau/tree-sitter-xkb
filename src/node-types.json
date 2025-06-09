@@ -1,0 +1,1766 @@
+[
+  {
+    "type": "action",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "action_name",
+          "named": true
+        },
+        {
+          "type": "field_name",
+          "named": true
+        },
+        {
+          "type": "value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "allowexplicit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compat_set_default_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action_name",
+          "named": true
+        },
+        {
+          "type": "field_name",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "component",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "xkb_compat",
+          "named": true
+        },
+        {
+          "type": "xkb_keycodes",
+          "named": true
+        },
+        {
+          "type": "xkb_symbols",
+          "named": true
+        },
+        {
+          "type": "xkb_types",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "controls",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "controls_mask",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "controls_mask",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "field_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "group_name_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "group_ref",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "group_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "group_ref",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifiers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "groups_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "include_target",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include_target",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "indicatordriveskeyboard",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interpret_complex_pred",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "interpret_match_mask",
+          "named": true
+        },
+        {
+          "type": "interpret_match_op",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interpret_cond",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "interpret_pred",
+          "named": true
+        },
+        {
+          "type": "keysym",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interpret_match_mask",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "modifiers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interpret_match_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "interpret_pred",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "interpret_complex_pred",
+          "named": true
+        },
+        {
+          "type": "interpret_match_mask",
+          "named": true
+        },
+        {
+          "type": "interpret_match_op",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interpret_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action_stmt",
+          "named": true
+        },
+        {
+          "type": "interpret_cond",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "repeat_stmt",
+          "named": true
+        },
+        {
+          "type": "usemodmapmods_stmt",
+          "named": true
+        },
+        {
+          "type": "virtualmodifier_stmt",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_actions",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "action",
+          "named": true
+        },
+        {
+          "type": "group_ref",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_overlay",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "keycode_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_repeat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "key_actions",
+          "named": true
+        },
+        {
+          "type": "key_overlay",
+          "named": true
+        },
+        {
+          "type": "key_repeat",
+          "named": true
+        },
+        {
+          "type": "key_symbols",
+          "named": true
+        },
+        {
+          "type": "key_type",
+          "named": true
+        },
+        {
+          "type": "key_virtual_modifiers",
+          "named": true
+        },
+        {
+          "type": "keycode_name",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "symbol_table",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_symbols",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "group_ref",
+          "named": true
+        },
+        {
+          "type": "symbol_table",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "group_ref",
+          "named": true
+        },
+        {
+          "type": "typename",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "key_virtual_modifiers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "modifiers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keycode_alias",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keycode_name",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keycode_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keycode_name",
+          "named": true
+        },
+        {
+          "type": "keycode_value",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keycode_range_bound",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keycode_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "keycode_alias",
+          "named": true
+        },
+        {
+          "type": "keycode_decl",
+          "named": true
+        },
+        {
+          "type": "keycode_range_bound",
+          "named": true
+        },
+        {
+          "type": "led_name_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keycode_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keysym",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "led_map_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "allowexplicit",
+          "named": true
+        },
+        {
+          "type": "controls",
+          "named": true
+        },
+        {
+          "type": "groups_stmt",
+          "named": true
+        },
+        {
+          "type": "indicatordriveskeyboard",
+          "named": true
+        },
+        {
+          "type": "led_name",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifiers_stmt",
+          "named": true
+        },
+        {
+          "type": "whichgroupstate_stmt",
+          "named": true
+        },
+        {
+          "type": "whichmodstate_stmt",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "led_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "led_name_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "led_name",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "level_name_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "level_ref",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "level_ref",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "map_entry_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "level_ref",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifiers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "merge_mode",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "modifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "real_modifier",
+          "named": true
+        },
+        {
+          "type": "virtual_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modifier_map",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "keycode_name",
+          "named": true
+        },
+        {
+          "type": "keysym",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "real_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modifiers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modifiers_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifiers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "number",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "preserve_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifiers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "real_modifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "real_modifiers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "real_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "repeat_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "section_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "component",
+          "named": true
+        },
+        {
+          "type": "xkb_keymap",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "symbol_table",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "keysym",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "symbols_set_default_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action_name",
+          "named": true
+        },
+        {
+          "type": "field_name",
+          "named": true
+        },
+        {
+          "type": "group_ref",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "level_name_stmt",
+          "named": true
+        },
+        {
+          "type": "map_entry_stmt",
+          "named": true
+        },
+        {
+          "type": "modifiers_stmt",
+          "named": true
+        },
+        {
+          "type": "preserve_stmt",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typedef",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "type_stmt",
+          "named": true
+        },
+        {
+          "type": "typename",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typename",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "usemodmapmods_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action",
+          "named": true
+        },
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "controls_mask",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "keycode_name",
+          "named": true
+        },
+        {
+          "type": "modifiers",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "virtual_modifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "virtual_modifier_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "real_modifiers",
+          "named": true
+        },
+        {
+          "type": "virtual_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "virtualmodifier_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "whichgroupstate_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "whichmodstate_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "xkb_compat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compat_set_default_stmt",
+          "named": true
+        },
+        {
+          "type": "group_stmt",
+          "named": true
+        },
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "interpret_stmt",
+          "named": true
+        },
+        {
+          "type": "led_map_stmt",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "section_name",
+          "named": true
+        },
+        {
+          "type": "virtual_modifier_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "xkb_keycodes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "keycode_stmt",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "section_name",
+          "named": true
+        },
+        {
+          "type": "virtual_modifier_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "xkb_keymap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "component",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "xkb_symbols",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "group_name_stmt",
+          "named": true
+        },
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "key_stmt",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "modifier_map",
+          "named": true
+        },
+        {
+          "type": "section_name",
+          "named": true
+        },
+        {
+          "type": "symbols_set_default_stmt",
+          "named": true
+        },
+        {
+          "type": "virtual_modifier_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "xkb_types",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "merge_mode",
+          "named": true
+        },
+        {
+          "type": "section_name",
+          "named": true
+        },
+        {
+          "type": "typedef",
+          "named": true
+        },
+        {
+          "type": "virtual_modifier_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "AccessXFeedback",
+    "named": false
+  },
+  {
+    "type": "AccessXKeys",
+    "named": false
+  },
+  {
+    "type": "AccessXTimeout",
+    "named": false
+  },
+  {
+    "type": "AllOf",
+    "named": false
+  },
+  {
+    "type": "Any",
+    "named": false
+  },
+  {
+    "type": "AnyOf",
+    "named": false
+  },
+  {
+    "type": "AnyOfOrNone",
+    "named": false
+  },
+  {
+    "type": "AudibleBell",
+    "named": false
+  },
+  {
+    "type": "AutoRepeat",
+    "named": false
+  },
+  {
+    "type": "BounceKeys",
+    "named": false
+  },
+  {
+    "type": "Control",
+    "named": false
+  },
+  {
+    "type": "Exactly",
+    "named": false
+  },
+  {
+    "type": "IgnoreGroupLock",
+    "named": false
+  },
+  {
+    "type": "Lock",
+    "named": false
+  },
+  {
+    "type": "Mod1",
+    "named": false
+  },
+  {
+    "type": "Mod2",
+    "named": false
+  },
+  {
+    "type": "Mod3",
+    "named": false
+  },
+  {
+    "type": "Mod4",
+    "named": false
+  },
+  {
+    "type": "Mod5",
+    "named": false
+  },
+  {
+    "type": "MouseKeys",
+    "named": false
+  },
+  {
+    "type": "MouseKeysAccel",
+    "named": false
+  },
+  {
+    "type": "None",
+    "named": false
+  },
+  {
+    "type": "NoneOf",
+    "named": false
+  },
+  {
+    "type": "Overlay1",
+    "named": false
+  },
+  {
+    "type": "Overlay2",
+    "named": false
+  },
+  {
+    "type": "Repeat",
+    "named": false
+  },
+  {
+    "type": "RepeatKeys",
+    "named": false
+  },
+  {
+    "type": "Shift",
+    "named": false
+  },
+  {
+    "type": "SlowKeys",
+    "named": false
+  },
+  {
+    "type": "StickyKeys",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "action",
+    "named": false
+  },
+  {
+    "type": "actions",
+    "named": false
+  },
+  {
+    "type": "all",
+    "named": false
+  },
+  {
+    "type": "allowExplicit",
+    "named": false
+  },
+  {
+    "type": "any",
+    "named": false
+  },
+  {
+    "type": "bool",
+    "named": true
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "controls",
+    "named": false
+  },
+  {
+    "type": "ctrls",
+    "named": false
+  },
+  {
+    "type": "group",
+    "named": false
+  },
+  {
+    "type": "groupName",
+    "named": false
+  },
+  {
+    "type": "group_ref",
+    "named": true
+  },
+  {
+    "type": "groups",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "indicatorDrivesKeyboard",
+    "named": false
+  },
+  {
+    "type": "key",
+    "named": false
+  },
+  {
+    "type": "keycode_name",
+    "named": true
+  },
+  {
+    "type": "level1",
+    "named": false
+  },
+  {
+    "type": "level_name",
+    "named": false
+  },
+  {
+    "type": "map",
+    "named": false
+  },
+  {
+    "type": "maximum",
+    "named": false
+  },
+  {
+    "type": "minimum",
+    "named": false
+  },
+  {
+    "type": "modifiers",
+    "named": false
+  },
+  {
+    "type": "name",
+    "named": false
+  },
+  {
+    "type": "none",
+    "named": false
+  },
+  {
+    "type": "preserve",
+    "named": false
+  },
+  {
+    "type": "repeat",
+    "named": false
+  },
+  {
+    "type": "symbols",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "useModMapMods",
+    "named": false
+  },
+  {
+    "type": "virtualModifier",
+    "named": false
+  },
+  {
+    "type": "virtualModifiers",
+    "named": false
+  },
+  {
+    "type": "virtualMods",
+    "named": false
+  },
+  {
+    "type": "vmods",
+    "named": false
+  },
+  {
+    "type": "whichGroupState",
+    "named": false
+  },
+  {
+    "type": "whichModState",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]

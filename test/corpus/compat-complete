@@ -1,0 +1,22 @@
+===============
+Include testing
+===============
+
+xkb_compat "foo" {
+	include "bar"
+	augment "baz"
+};
+
+------
+(source_file
+	(component
+		(xkb_compat
+			(section_name (string))
+			(include (include_target (string)))
+			(include
+				(merge_mode)
+				(include_target (string))
+			)
+		)
+	)
+)
