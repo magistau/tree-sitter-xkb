@@ -2,6 +2,10 @@
 
 The grammar is based on [`xkbcommon` docs](https://xkbcommon.org/doc/current/keymap-text-format-v1.html), followed by _some_ investigation of `xkbcommon` code for stuff used in real `xkeyboard_config` yet undocumented by `xkbcommon`.
 
+## Usage
+
+Use the [`build` branch](https://github.com/magistau/tree-sitter-xkb/tree/build), it contains the generated parser and bindings.
+
 ## (Somewhat) resolved questions
 
 ### General syntax
