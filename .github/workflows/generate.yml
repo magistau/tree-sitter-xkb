@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+name: Generate Tree-sitter parser
+on:
+  push:
+    branches:
+      - mistress
+permissions:
+  contents: write
+jobs:
+  generate:
+    name: Generate Tree-sitter parser
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - uses: tree-sitter/setup-action@v2
+        with:
+          install-lib: false
+      - run: tree-sitter init
+        env:
+          TREE_SITTER_JS_RUNTIME: bun
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Generate Tree-sitter parser
+          branch: build
+          create_branch: true
