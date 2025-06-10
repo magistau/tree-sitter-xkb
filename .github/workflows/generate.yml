@@ -24,3 +24,6 @@ jobs:
           commit_message: Generate Tree-sitter parser
           branch: build
           create_branch: true
+          skip_dirty_check: true
+          add_options: "--force"
+          push_options: "--force"

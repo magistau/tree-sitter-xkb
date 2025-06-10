@@ -1,47 +1,12 @@
-# Rust artifacts
-target/
-
-# Node artifacts
-build/
-prebuilds/
-node_modules/
-
-# Swift artifacts
-.build/
-
-# Go artifacts
-_obj/
-
-# Python artifacts
-.venv/
-dist/
-*.egg-info
-*.whl
-
-# C artifacts
-*.a
-*.so
-*.so.*
-*.dylib
-*.dll
-*.pc
-*.exp
-*.lib
-
-# Zig artifacts
-.zig-cache/
-zig-cache/
-zig-out/
-
-# Example dirs
-/examples/*/
-
-# Grammar volatiles
-*.wasm
-*.obj
-*.o
-
-# Archives
-*.tar.gz
-*.tgz
-*.zip
+bindings/
+CMakeLists.txt
+Makefile
+Cargo.toml
+Package.swift
+build.zig
+build.zig.zon
+go.mod
+binding.gyp
+package.json
+pyproject.toml
+setup.py
